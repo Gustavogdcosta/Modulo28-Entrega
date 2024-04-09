@@ -31,8 +31,11 @@ const AlturaEpeso = () => {
         if (calculaIMC >= 35 && calculaIMC <= 39.9 ) {
             return (<p> {nome}, o seu IMC é {calculaIMC} e você possui sobrepeso grau II </p>)
         }
-        if (calculaIMC >= 40 ){
+        if (calculaIMC >= 40 && calculaIMC <= 199.99){
             return (<p> {nome}, o seu IMC é {calculaIMC} e você possui obesidade mórbida </p>)
+        }
+        if (calculaIMC >= 999 ){
+            return
         }
     }
 
