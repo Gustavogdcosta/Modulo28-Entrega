@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './main.css'
 
 const AlturaEpeso = () => {
@@ -32,7 +32,7 @@ const AlturaEpeso = () => {
             return (<p> {nome}, o seu IMC é {calculaIMC} e você possui sobrepeso grau II </p>)
         }
         if (calculaIMC >= 40 ){
-            return Math.round(<p> {nome}, o seu IMC é {calculaIMC} e você possui obesidade mórbida </p>)
+            return (<p> {nome}, o seu IMC é {calculaIMC} e você possui obesidade mórbida </p>)
         }
     }
 
